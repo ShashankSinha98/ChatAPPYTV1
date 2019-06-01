@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/msg_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/message_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/def_pp"
+                    android:id="@+id/msg_profile_image_civ"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/msg_img_on"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/msg_username_tv"
+                    android:layout_toRightOf="@id/msg_profile_image_civ"
+                    android:src="@color/green"
+                    android:layout_marginLeft="-13dp"
+                    android:layout_marginTop="-10dp"
+                    android:visibility="visible"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/msg_img_off"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/msg_username_tv"
+                    android:layout_toRightOf="@id/msg_profile_image_civ"
+                    android:src="@color/grey"
+                    android:layout_marginLeft="-15dp"
+                    android:layout_marginTop="-10dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msg_username_tv"
+                    android:layout_toRightOf="@id/msg_profile_image_civ"
+                    android:textColor="@color/white"
+                    android:text="Username"
+                    android:layout_marginLeft="15dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/msg_bar_layout"
+        android:layout_above="@id/send_msg_rl"
+        android:id="@+id/msg_recycler_view"
+        ></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/send_msg_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/send_img_btn"
+            android:background="@drawable/ic_action_name"
+            />
+
+        <EditText
+            android:layout_toRightOf="@id/send_img_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg_et"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:hint="Type a Message...."
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/btn_send_msg"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_action_send"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_send_msg"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

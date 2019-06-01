@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "996881490972",
+    "firebase_url": "https://chatappytv1.firebaseio.com",
+    "project_id": "chatappytv1",
+    "storage_bucket": "chatappytv1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996881490972:android:f10ba5b87027016f",
+        "android_client_info": {
+          "package_name": "com.example.shashanksinha.chatappytv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996881490972-d3qdi3v97vlqagttppm4oiu3pkci5irg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shashanksinha.chatappytv1",
+            "certificate_hash": "8bad38165c021afb0edd148290039d9cd97330f2"
+          }
+        },
+        {
+          "client_id": "996881490972-pv5rr3fnsnpp01t9jum6cgjt44k377fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4HCXBONoO6uC2aoIGvHUfDMrvyzqWfmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996881490972-pv5rr3fnsnpp01t9jum6cgjt44k377fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
